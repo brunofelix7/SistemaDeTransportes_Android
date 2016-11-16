@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLin"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="8"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.sisbus.sisbusapp.ChamadosActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/localizacaoAtual"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/idLocalizacao"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:maxLines="1"
+            android:inputType="text"
+            android:singleLine="true"
+            android:hint="@string/localizacao"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/idNumero"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:hint="@string/numero"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/idReferencia"
+        android:paddingTop="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:hint="@string/referencia"
+        android:textSize="14sp"/>
+
+    <Spinner
+        android:id="@+id/idAvaria"
+        android:layout_marginTop="16dp"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left" />
+
+    <EditText
+        android:id="@+id/idObservacao"
+        android:paddingTop="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:inputType="textMultiLine"
+        android:singleLine="true"
+        android:hint="@string/observacao"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/idCodigoVeiculo"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:maxLines="1"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:hint="@string/codigoVeiculo"
+        android:textSize="14sp"/>
+
+    <Spinner
+        android:id="@+id/idPrioridade"
+        android:layout_marginTop="16dp"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_solicitacao"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/buttons_color_green"
+        android:text="@string/solicitar"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>
